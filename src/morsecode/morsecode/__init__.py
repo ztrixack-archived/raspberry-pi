@@ -24,6 +24,9 @@ CODE = {
 
 CODE_REVERSED = {value:key for key,value in CODE.items()}
 
+DASH = '-'
+DOT = '.'
+
 def encode(s):
     return ' '.join(CODE.get(i.upper()) for i in s)
 
