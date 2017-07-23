@@ -1,3 +1,13 @@
+#!/usr/bin/python
+
+global DASH
+global DOT
+global SPACE
+
+DASH = '-'
+DOT = '.'
+SPACE = ' '
+
 CODE = {
     'A': '.-',      'B': '-...',    'C': '-.-.',
     'D': '-..',     'E': '.',       'F': '..-.',
@@ -23,9 +33,6 @@ CODE = {
     }
 
 CODE_REVERSED = {value:key for key,value in CODE.items()}
-
-DASH = '-'
-DOT = '.'
 
 def encode(s):
     return ' '.join(CODE.get(i.upper()) for i in s)
